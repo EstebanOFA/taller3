@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="btn-group d-flex justify-content-center" role="group">
+
+        <button class="btn btn-primary border border-dark" type="button" id="boton1">
+            Estudiantes
+        </button>
+        <button class="btn btn-primary border border-dark" type="button" id="boton2">
+            Articulos Tienda
+        </button>
+        
+    </div>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-12" id="miDiv">
+                <div class="page-header text-center">
+                    <h1>
+                       Sistema De Registro
+                    </h1>
+                    <br>
+                    <br>
+                </div>
+                
+
+                <br>
+                <br>
+
+                <table class="table table-hover table-bordered" id="estudiantes">
+                    <thead>
+                        <tr>
+                            <th>
+                                Codigo
+                            </th>
+                            <th>
+                                Nombres
+                            </th>
+                            <th>
+                                Apellidos
+                            </th>
+                            <th>
+                                Curso
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-success">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                TB - Monthly
+                            </td>
+                            <td>
+                                01/04/2012
+                            </td>
+                            <td>
+                                Default
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                TB - Monthly
+                            </td>
+                            <td>
+                                01/04/2012
+                            </td>
+                            <td>
+                                Approved
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                TB - Monthly
+                            </td>
+                            <td>
+                                02/04/2012
+                            </td>
+                            <td>
+                                Declined
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                TB - Monthly
+                            </td>
+                            <td>
+                                03/04/2012
+                            </td>
+                            <td>
+                                Pending
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                TB - Monthly
+                            </td>
+                            <td>
+                                04/04/2012
+                            </td>
+                            <td>
+                                Call in to confirm
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+
+                    <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Registrar Estudiante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Registro Usuario</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">Codigo</label>
+                                <input type="number" class="form-control" id="codigo"
+                                    placeholder="Escriba el codigo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombres" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="nombres"
+                                    placeholder="Escriba los Nombres">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidos" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="apellidos"
+                                    placeholder="Escriba los Apellidos">
+                            </div>
+                            <div class="mb-3">
+                                <label for="curso" class="form-label">Curso</label>
+                                <input type="text" class="form-control" id="curso"
+                                    placeholder="Escriba el curso">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12" id="contenido1" style="display: none;">
+            <div class="page-header text-center">
+                <h1>
+                   Sistema De Registsda
+                </h1>
+                <br>
+                <br>
+            </div>
+           
+            <br>
+            <br>
+
+            <table class="table table-hover table-bordered" id="articulos">
+                <thead>
+                    <tr>
+                        <th>
+                            sad
+                        </th>
+                        <th>
+                            dasd
+                        </th>
+                        <th>
+                            ads
+                        </th>
+                        <th>
+                            ads
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Default
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Approved
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            02/04/2012
+                        </td>
+                        <td>
+                            Declined
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            03/04/2012
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            04/04/2012
+                        </td>
+                        <td>
+                            Call in to confirm
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+
+                <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Registrar Estudiante
+                </button>
+            </div>
+        </div>
+        
+        <div class="col-md-12" id="contenido2" style="display: none;">
+            <div class="page-header text-center">
+                <h1>
+                   Sistema De Registro
+                </h1>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <br>
+
+            <table class="table table-hover table-bordered" id="articulos">
+                <thead>
+                    <tr>
+                        <th>
+                            Codigo
+                        </th>
+                        <th>
+                            Nombre Articulo
+                        </th>
+                        <th>
+                            Unidades
+                        </th>
+                        <th>
+                            Precio Unidad
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Default
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Approved
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            02/04/2012
+                        </td>
+                        <td>
+                            Declined
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            03/04/2012
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            TB - Monthly
+                        </td>
+                        <td>
+                            04/04/2012
+                        </td>
+                        <td>
+                            Call in to confirm
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+
+                <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Registrar Estudiante
+                </button>
+            </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="js/function.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
