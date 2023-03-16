@@ -14,7 +14,7 @@ $('#boton2').click(function () {
 
 $('#nuevoEstudiante').click(
   function () {
-
+    
     var codigo = $('#codigo').val();
     var nombre = $('#nombres').val();
     var apellido= $('#apellidos').val();
